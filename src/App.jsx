@@ -3,6 +3,8 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contacts from './components/pages/Contacts';
 import Navbar from './components/Navbar';
+import Post from './components/pages/Post';
+
 function App() {
   
   return (
