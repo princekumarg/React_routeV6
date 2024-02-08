@@ -25,10 +25,11 @@ function App() {
           <Route path='/contact' element={<Contacts />}/>
           <Route path='/post/:category' element={<Post />}/>
           <Route path='/post/:category/:id' element={<Post />}/>
-          <Route path='*' element={<h1>Error 404 Page not Found !!</h1>}/>
           <Route path='/login' element={<Login />}/>
           <Route path='/logout' element={<Logout />}/>
-          <Route path='/dashboard' element={isLogged?<Dashboard/>:<Navigate to="/login" replace state={data}/>}/>
+          <Route path="/dashboard" element={isLogged ? <Dashboard /> : <Navigate to="/login" replace state={data} />}/>
+          <Route path='*' element={<h1>Error 404 Page not Found !!</h1>}/>
+          
         </Routes>
       </BrowserRouter>
     </>
