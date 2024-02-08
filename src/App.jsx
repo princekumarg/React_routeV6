@@ -11,9 +11,12 @@ function App() {
         <Navbar/>
         <Routes>
           {/*<Route path='/' element={<h1>Hello React Router</h1>}/>*/} 
-          <Route path='/' element={<Home />}></Route>
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/contact' element={<Contacts />}></Route>
+          <Route path='/' element={<Home />}/>
+          <Route path='/about' element={<About />}/>
+          <Route path='/contact' element={<Contacts />}/>
+          <Route path='/contact' element={<Contacts />}/>
+          <Route path='/post/:category' element={<Post />}/>
+          <Route path='/post/:category:id' element={<Post />}/>
           <Route path='*' element={<h1>Error 404 Page not Found !!</h1>}/>
         
         </Routes>
