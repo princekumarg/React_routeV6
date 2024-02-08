@@ -11,7 +11,8 @@ import Logout from './components/pages/Logout';
 function App() {
   let isLogged=true;
   let data={
-    'st':'User not logged in'
+    'st':'User not logged in',
+    'name':'Prince'
   }
   return (
     <>
